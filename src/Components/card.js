@@ -128,7 +128,7 @@ export default function Card(
   card.append(cardBackground, cardElements);
 
   profileImg.addEventListener("pointerdown", () => {
-    Information();
+    Information(name, photo, country, gender, age);
   });
 
   return card;
