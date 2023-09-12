@@ -1,0 +1,76 @@
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 23rem;
+  box-shadow: 1px -1px 18px -3px rgba(0, 0, 0, 0.75);
+}
+.cardBackgroundImg {
+  position: absolute;
+  width: 23rem;
+  opacity: 7%;
+}
+.cardElements {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap:0.5rem;
+  padding: 1rem 0.5rem 1rem 2rem;
+}
+.cardLeftSide,
+.cardRightSide {
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: grayscale(100%);
+}
+.cardLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.cardRightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+}
+.rightSideGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: rgb(126, 126, 126);
+}
+.rightSideGrid span {
+    justify-self: end;
+}
+.rightSideGrid div {
+    display: flex;
+    gap:0.3rem;
+}
+.profileImg {
+  background-size: cover;
+  border: rgb(3, 197, 100) solid 2px;
+  border-radius: 20px 40px 20px 40px;
+  width: 6rem;
+  height: 6rem;
+}
+.profileImg:hover{
+    cursor: pointer;
+}
+.cardText {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.cardIcon {
+  height: 1rem;
+  width: 1rem;
+}
+.name {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
